@@ -1,0 +1,35 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:5000/",
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "react": "16.4",
+    "react-dom": "16.4",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --open --mode development --hot",
+    "build": "webpack --mode production",
+    "react_start": "react-scripts start",
+    "raect_build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn start\""
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "concurrently": "^3.5.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "imports-loader": "0.6.5",
+    "react-router-dom": "^4.3.1",
+    "webpack": "^4.16.3",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  }
+}
